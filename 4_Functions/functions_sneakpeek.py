@@ -73,17 +73,16 @@ def near_hundred_abs(n):
     :param n: an integer
     :return: bool
     """
-    if 90 <= n <= 110 or 190 <= n <= 210:
+    if abs(100-n) <= 10 or abs(200-n):
         return True
     else:
         return False
 
-print near_hundred(80)
-print near_hundred(95)
-print near_hundred(115)
-print near_hundred(110)
+def to_fahrenheit(celsius):
+    """
+    Convert a given celsius to fahrenheit
+    :param celsius: float - temp in celsius to convert
+    :return: float - the resulting temp in fahrenheit
+    """
 
-print near_hundred(180)
-print near_hundred(195)
-print near_hundred(215)
-print near_hundred(210)
+    return (1.8*celsius) + 32
