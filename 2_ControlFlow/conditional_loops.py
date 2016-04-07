@@ -58,5 +58,27 @@ def example2():
     # Output sum/number of entries
     print float(total)/entries
 
-example2()
+
+
+def largest():
+    biggest = 0
+    number = input("Enter number here: ")
+
+    while number != -1:
+        if number > biggest:
+            biggest = number
+        number = input("Enter number here: ")
+    print biggest
+
+
+def infinite():
+    # repeat while count <=10
+    count = 1
+    while count <= 10:
+        print count # output count
+        #count += 1 --> commenting this out causes an infinite loop
+
+
+
+
 
