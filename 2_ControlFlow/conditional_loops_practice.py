@@ -11,7 +11,7 @@ def problem1():
     print biggest
 
 
-def problem_2():
+def problem2():
     """
     Write a program that lets you continuously enter a word and it prints out the number of vowels
     and the number of consonants (vowels are: a,e,i,o,u. all others are consonants) until the word 'stop' is entered.
