@@ -15,6 +15,8 @@ def example1_1():
     print name1
     print name2
 
+    namesfile.close()
+
 
 def example1_2():
     """
@@ -56,7 +58,7 @@ def practice1():
     pass #replace with your code
 
 
-def example1_3():
+def example1_4():
     """
     Demo of readline - working with integers.  Compute the average of the first 5 marks in a text file of integers (one mark per line)
 
