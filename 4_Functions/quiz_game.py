@@ -33,7 +33,7 @@ def check_response(user_response, data_string):
     # get the last value from the
     answer = data_list[-1].strip()
 
-    if user_response == answer:
+    if user_response.lower() == answer.lower():
         return True
     else:
         return False
@@ -59,13 +59,13 @@ def show_options(data_string):
     pass
 
 
-
 def process_questions(datafile):
     """
     Asks questions and updates score accordingly
     :param datafile: file object - a file object created via an open() call
     :return: int - the final score of the player
     """
+    pass
 
     # COMPLETE THIS FUNCTION
     # initialize score
