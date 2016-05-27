@@ -62,15 +62,15 @@ def show_options(data_string):
 
 def process_questions(datafile):
     """
-
-    :param datafile:
-    :return:
+    Asks questions and updates score accordingly
+    :param datafile: file object - a file object created via an open() call
+    :return: int - the final score of the player
     """
 
     # COMPLETE THIS FUNCTION
     # initialize score
     # repeat
-        # read question from data file
+        # read a line from data file
         # show question
         # show options
         # get user response
@@ -89,6 +89,12 @@ def show_final_score(final_score):
 
 
 def main():
+    """
+    A quiz game.  Data is read from a source text file.
+    :return:
+    """
     myfile = open_datafile("quiz_data.txt")
     final_score = process_questions(myfile)
-    pass
+    show_final_score(final_score)
+
+main()
