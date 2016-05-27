@@ -74,7 +74,7 @@ def process_questions(datafile):
         # show question
         # show options
         # get user response
-        # check response
+        # check response (use check response function)
         # update score
     # return score
 
