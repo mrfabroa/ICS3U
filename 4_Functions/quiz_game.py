@@ -2,7 +2,6 @@ __author__ = 'eric'
 
 
 
-
 def show_question(data_string):
     """
     Extracts a question from the data_string and displays it on the screen
@@ -56,7 +55,16 @@ def show_options(data_string):
     """
 
     # COMPLETE THIS FUNCTION
-    pass
+    # split data string based on a "," separator
+    data_list = data_string.split(",")
+
+    option1 = data_list[1]
+    option2 = data_list[2]
+    option3 = data_list[3]
+
+    print "a. " + option1
+    print "b. " + option2
+    print "c. " + option3
 
 
 def process_questions(datafile):
@@ -69,14 +77,33 @@ def process_questions(datafile):
 
     # COMPLETE THIS FUNCTION
     # initialize score
+    score = 0
+
+    num_questions = int(datafile.readline())
+
     # repeat
+    for i in range(num_questions):
         # read a line from data file
+        data_string = datafile.readline().strip()
+
         # show question
+        show_question(data_string)
+
         # show options
+        show_options(data_string)
+
         # get user response
+        user_answer = raw_input("Enter your answer:  ")
+
         # check response (use check response function)
-        # update score
+        if check_response(user_answer,data_string):
+            # update score
+            score += 1
+
+
     # return score
+    return score
+
 
 def show_final_score(final_score):
     """
@@ -85,7 +112,7 @@ def show_final_score(final_score):
     :return: None
     """
 
-    pass
+    print "Your final score is", final_score
 
 
 def main():
