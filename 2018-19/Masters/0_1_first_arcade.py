@@ -3,7 +3,7 @@
 import arcade
 import os
 
-# ?a
+# ?
 arcade.open_window(600, 600, "My First Arcade Program")
 
 # ?
